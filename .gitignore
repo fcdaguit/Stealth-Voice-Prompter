@@ -1,0 +1,22 @@
+*.iml
+.gradle/
+
+# The wrapper JAR must be committed — CI runs ./gradlew. Some global
+# gitignore templates exclude *.jar, so this keeps it in.
+!gradle/wrapper/gradle-wrapper.jar
+
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.jks
+*.keystore
+
+# Speech models are large binaries — download them, don't commit them.
+app/src/main/assets/model-*/
+app/src/main/assets/*.zip
